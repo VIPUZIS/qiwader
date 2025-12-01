@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#002A3A"
+    tools:context=".HomePage">
+
+    <ImageView
+        android:id="@+id/el_tap"
+        android:layout_width="286dp"
+        android:layout_height="316dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/el" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/bruno_ace"
+        android:text="QiwaderRU"
+        android:textColor="#1DA900"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bits_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/bruno_ace"
+        android:text="Bits: "
+        android:textColor="#0043FF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/el_tap" />
+
+    <Button
+        android:id="@+id/nxtboosts"
+        android:layout_width="201dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/bruno_ace"
+        android:text="Buy boosts"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bits_q" />
+
+    <Button
+        android:id="@+id/myprgrss"
+        android:layout_width="214dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/bruno_ace"
+        android:text="My progress"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nxtboosts" />
+
+    <Button
+        android:id="@+id/dntmplsbtn"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bruno_ace"
+        android:text="Donate me, please"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myprgrss" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
