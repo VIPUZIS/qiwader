@@ -69,7 +69,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/bruno_ace"
-        android:text="Boost clicks"
+        android:text="Boost Income"
         android:textColor="#FFADAD"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"

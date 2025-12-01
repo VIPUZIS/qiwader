@@ -20,7 +20,7 @@ class HomePage : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var count = 0
+        var count = 1000000
         var multiple = 1
 
         val textCount = findViewById<TextView>(R.id.bits_q)
@@ -33,7 +33,7 @@ class HomePage : AppCompatActivity() {
         val btnnxtboostsbutton = findViewById<Button>(R.id.nxtboosts)
         val intentthispage1 = Intent(this, boosts::class.java)
         btnnxtboostsbutton.setOnClickListener {
-            startActivity(intent)
+            startActivity(intentthispage1)
         }
         val btndntmplsbutton = findViewById<Button>(R.id.dntmplsbtn)
         val intentthispage2 = Intent(this, dntmepls::class.java)
