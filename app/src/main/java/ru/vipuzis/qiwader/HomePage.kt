@@ -20,6 +20,7 @@ class HomePage : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         var count = 1
         var multiple = 1
 
