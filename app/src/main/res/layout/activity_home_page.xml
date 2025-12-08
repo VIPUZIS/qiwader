@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/bruno_ace"
-        android:text="Bits: "
+        android:text="Bits: no active"
         android:textColor="#0043FF"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"

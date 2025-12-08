@@ -1,5 +1,6 @@
 package ru.vipuzis.qiwader
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -7,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import ru.vipuzis.qiwader.data.model.MainViewModel
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,11 +21,12 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-            val btnnexthellobutton = findViewById<Button>(R.id.nexthellobutton)
-            val intent = Intent(this, hellopage::class.java)
-            btnnexthellobutton.setOnClickListener{
-                startActivity(intent)
-            }
+        val btnnexthellobutton = findViewById<Button>(R.id.nexthellobutton)
+        val intent = Intent(this, hellopage::class.java)
+        btnnexthellobutton.setOnClickListener{
+            startActivity(intent)
+        }
+
 
     }
 }

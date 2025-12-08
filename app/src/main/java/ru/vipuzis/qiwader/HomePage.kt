@@ -1,16 +1,25 @@
 package ru.vipuzis.qiwader
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import ru.vipuzis.qiwader.data.model.MainViewModel
+import kotlin.toString
+
 
 class HomePage : AppCompatActivity() {
+    private val mainVM: MainViewModel by viewModels()
+
+    @SuppressLint("MissingInflastedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,15 +30,7 @@ class HomePage : AppCompatActivity() {
             insets
         }
 
-        var count = 1
-        var multiple = 1
-
         val textCount = findViewById<TextView>(R.id.bits_q)
-        val imageLevel1 = findViewById<ImageView>(R.id.el_tap)
-        imageLevel1.setOnClickListener {
-            count += Plus(multiple)
-            textCount.setText("Bits: " + count.toString())
-        }
 
         val btnnxtboostsbutton = findViewById<Button>(R.id.nxtboosts)
         val intentthispage1 = Intent(this, boosts::class.java)
@@ -47,11 +48,16 @@ class HomePage : AppCompatActivity() {
         btnmyprgrssbutton.setOnClickListener {
             startActivity(intentthispage3)
         }
-    }
-    fun Plus(multiple: Int): Int {
-        return 1*multiple
-    }
 
+        mainVM.count.observe(this) { count ->
+            textCount.text = "Bits: " + count.toString()
+        }
 
+        val el_tap = findViewById<ImageView>(R.id.el_tap)
+
+        el_tap.setOnClickListener {
+            mainVM.plus()
+        }
+    }
 
 }
