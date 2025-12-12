@@ -14,6 +14,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val isNotFirstLaunch = MutableLiveData<Int>()
     val count: LiveData<Int> = _count
 
+    private val _multiple = MutableLiveData<Int>()
+
+    var isIsedAutoclickerPrice = 0
+    var isUsedBostsClicksPrice = 0
+    var isUserBostsIncomePrice = 0
+
     init {
         val saved = preferences.getInt("count", 0)
         _count.value = saved
