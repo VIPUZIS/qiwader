@@ -6,7 +6,7 @@
 <h2><b>ВСЕ ОБНОВЛЕНИЯ В ТЕЛЕГРАМ БОТЕ <i>@greenlatebot</i></b></h2>
 
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/greenlatebot)
-
+(Нажмите для перехода в бота <b>↑</b> )
 
 
 # Пользовательское соглашение для игры‑кликера *Qiwader RU*
