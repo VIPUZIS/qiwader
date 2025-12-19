@@ -5,7 +5,7 @@
 
 <h2><b>ВСЕ ОБНОВЛЕНИЯ В ТЕЛЕГРАМ БОТЕ <i>@greenlatebot</i></b></h2>
 
-[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/greenlatebot) <h3>`Нажмите для перехода в телеграм‑бота`</h3>
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/greenlatebot) *Нажмите для перехода в телеграм‑бота*
 
 
 # Пользовательское соглашение для игры‑кликера *Qiwader RU*
