@@ -22,9 +22,6 @@ class boosts : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val isIsedAutoclickerPrice
-        val isUsedBostsClicksPrice
-        val isUserBostsIncomePrice
         val autoclickerPrice = 25000
         val bostsClicksPrice = 5000
         val bostsIncomePrice = 250000
