@@ -28,5 +28,11 @@ class boosts : AppCompatActivity() {
         val ac = findViewById<Button>(R.id.btnautoclicker)
         val bstCl = findViewById<Button>(R.id.btnbostsClicks)
         val bostIncPr = findViewById<Button>(R.id.btnbostsIncomePrice)
+
+        ac.setOnClickListener {
+            if(!mainVM.isIsedAutoclickerPrice.value!!){
+                mainVM.buyMultiple(5, 120, mainVM.isIsedAutoclickerPrice)
+            }
+        }
     }
 }
