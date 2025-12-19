@@ -7,6 +7,19 @@
 
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/greenlatebot)
 (Нажмите для перехода в бота <b>↑</b> )
+==
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/greenlatebot)  
+*Нажмите для перехода в телеграм‑бота*
+==
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/greenlatebot) `Нажмите для перехода в телеграм‑бота`
+==
+[
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/greenlatebot)  
+*Нажмите для перехода в телеграм‑бота*
+](https://t.me/greenlatebot)
+==
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/greenlatebot)  
+∣ *Нажмите для перехода в телеграм‑бота*
 
 
 # Пользовательское соглашение для игры‑кликера *Qiwader RU*
