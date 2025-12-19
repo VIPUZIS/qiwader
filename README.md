@@ -5,15 +5,8 @@
 
 <h2><b>ВСЕ ОБНОВЛЕНИЯ В ТЕЛЕГРАМ БОТЕ <i>@greenlatebot</i></b></h2>
 
-<a href="https://t.me/greenlatebot">Перейти в телеграм бота (кликабельно)</a>
-[🤖 Перейти в Telegram‑бота](https://t.me/greenlatebot)
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/greenlatebot)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="20"> **Открыть бота в Telegram**](https://t.me/greenlatebot)  
-*Быстрый доступ к функционалу бота*
-[![Telegram Bot](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/telegram/telegram-original.svg)](https://t.me/greenlatebot)
-<a href="https://t.me/greenlatebot" target="_blank">
-  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/telegram/telegram.png" alt="Telegram Bot" width="300">
-</a>
+
 
 
 # Пользовательское соглашение для игры‑кликера *Qiwader RU*
