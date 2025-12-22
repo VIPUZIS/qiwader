@@ -1,5 +1,6 @@
 package ru.vipuzis.qiwader
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -22,6 +23,11 @@ class boosts : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val btnbackbyboostsbutton = findViewById<Button>(R.id.backbyboosts)
+        val intentback = Intent(this, HomePage::class.java)
+        btnbackbyboostsbutton.setOnClickListener {
+            startActivity(intentback)
+        }
         val autoclickerPrice = 25000
         val bostsClicksPrice = 5000
         val bostsIncomePrice = 250000
@@ -30,8 +36,18 @@ class boosts : AppCompatActivity() {
         val bostIncPr = findViewById<Button>(R.id.btnbostsIncomePrice)
 
         ac.setOnClickListener {
-            if(!mainVM.isIsedAutoclickerPrice.value!!){
-                mainVM.buyMultiple(5, 120, mainVM.isIsedAutoclickerPrice)
+            if(!mainVM.isUsedAutoclickerPrice.value!!){
+                mainVM.buyMultiple(5, 120, mainVM.isUsedAutoclickerPrice)
+            }
+        }
+        bstCl.setOnClickListener {
+            if(!mainVM.isUsedBostsClicksPrice.value!!){
+                mainVM.buyMultiple(15, 1000, mainVM.isUsedBostsClicksPrice)
+            }
+        }
+        bostIncPr.setOnClickListener {
+            if(!mainVM.isUserBostsIncomePrice.value!!){
+                mainVM.buyMultiple(50, 10000, mainVM.isUserBostsIncomePrice)
             }
         }
     }

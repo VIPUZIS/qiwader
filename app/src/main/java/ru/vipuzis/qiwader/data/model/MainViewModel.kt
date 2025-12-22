@@ -17,20 +17,22 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _multiple = MutableLiveData<Int>()
 
-    var isIsedAutoclickerPrice = MutableLiveData<Boolean>()
+    var isUsedAutoclickerPrice = MutableLiveData<Boolean>()
     var isUsedBostsClicksPrice = MutableLiveData<Boolean>()
     var isUserBostsIncomePrice = MutableLiveData<Boolean>()
 
     init {
         val saved = preferences.getInt("count", 0)
         _count.value = saved
-        isIsedAutoclickerPrice.value = preferences.getBoolean("usedAutoclickerPrice",false)
+        val multipleSave = preferences.getInt("multiple", 1)
+        _multiple.value = multipleSave
+        isUsedAutoclickerPrice.value = preferences.getBoolean("usedAutoclickerPrice",false)
         isUsedBostsClicksPrice.value = preferences.getBoolean("usedBostsClicksPrice",false)
         isUserBostsIncomePrice.value = preferences.getBoolean("userBostsIncomePrice",false)
     }
 
     fun plus() {
-        val newValue = (_count.value ?: 0) + 1
+        val newValue = (_count.value ?: 0) + 1*(_multiple.value!!)
         _count.value = newValue
         preferences.edit { putInt("count", newValue) }
     }
@@ -41,10 +43,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             _multiple.value = newMultiple
             val newCount = (_count.value ?: 0) - cost
             _count.value = newCount
+            isUsed.value = true
             preferences.edit {
                 putInt("count", newCount)
                 putInt("multiple", newMultiple)
-                putBoolean("usedAutoclickerPrice", isIsedAutoclickerPrice.value!!)
+                putBoolean("usedAutoclickerPrice", isUsedAutoclickerPrice.value!!)
                 putBoolean("usedBostsClicksPrice", isUsedBostsClicksPrice.value!!)
                 putBoolean("userBostsIncomePrice", isUserBostsIncomePrice.value!!)
             }
